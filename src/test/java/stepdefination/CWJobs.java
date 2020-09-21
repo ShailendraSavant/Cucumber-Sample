@@ -23,6 +23,7 @@ public class CWJobs {
 		@When("I entered valid {string} and vaild {string} in step")
 		public void i_entered_valid_and_vaild_in_step(String string, String string2) {
 		    // Write code here that turns the phrase above into concrete actions
+			System.out.print("Parameter value is "+string);
 			driver.findElement(By.id("Form_Email")).sendKeys(string);
 			driver.findElement(By.id("Form_Password")).sendKeys(string2);
 		}
